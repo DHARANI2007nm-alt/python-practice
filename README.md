@@ -42,5 +42,7 @@ To improve my Python programming skills by practising daily and building small p
 ✔ Temperature Converter  
 
 (More coming soon...)
+This repo is synced successfully!
+
 
 
