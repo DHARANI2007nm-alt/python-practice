@@ -1,10 +1,10 @@
 #taking input from user
-a,b,c=map(int,input("enter 3 numbers:").split())
+a,b,c=map(int,input("enter 3 numbers:"))
 print("the numbers are :")
 print(a,b,c)
 
 #list of numbers
-num=(input("enter the numbers by space :"))
+num=list(input("enter the numbers by space :").split())
 print("the list of numbers are :",num)
 
 #set of numbers
