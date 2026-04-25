@@ -1,0 +1,37 @@
+# asking user to enter password  
+password = input("Enter your password: ")  
+  
+# nested if-else statement: checking whether the password is strong or not  
+if len(password) >= 8:  # checking the length of the password  
+  # outer if block  
+  if any(char.isdigit() for char in password): # checking if the password consists of any numeral value  
+    # inner if block  
+    print("Password is strong.")  
+  else:  
+    # inner else block  
+    print("Password must contain at least one number.")  
+else:  
+  # outer else block  
+  print("Password is too short. It must be at least 8 characters long.")  
+
+
+
+# asking user to enter their marks  
+marks = int(input("Enter your marks: "))  
+  
+# nested if-else statement: checking if the user passed with distinction or not  
+if marks >= 40: # checking if the user got marks greater than or equal to 40  
+  # outer if block  
+  if marks >= 75: # checking if the user got marks greater than or equal to 75  
+    # inner if block  
+    print("Congratulations! You passed with distinction.")  
+  else:  
+    # inner else block  
+    print("You passed the exam.")  
+else:  
+  # outer else  
+  print("You failed the exam. Better luck next time.")
+
+
+
+
