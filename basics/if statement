@@ -1,0 +1,22 @@
+age = int(input("Enter your age: "))  
+  
+# multiple if blocks  
+if age < 18: # checking if age is less than 18  
+    # printing a message  
+    print("You are not eligible to vote")  
+  
+if age >= 18: # checking if age is greater than or equal to 18  
+    # printing a message  
+    print("You are eligible to vote.")  
+  
+if age >= 21: # checking if age is greater than or equal to 21  
+    # printing a message  
+    print("You are allowed to consume alcohol in some countries.")  
+  
+if age >= 60: # checking if age is greater than or equal to 60  
+    # printing a message  
+    print("You are eligible for senior citizen benefits.")  
+  
+if age >= 80: # checking if age is greater than or equal to 80  
+    # printing a message  
+    print("You are a very senior citizen. Take extra care of your health.")  
