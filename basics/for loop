@@ -1,0 +1,38 @@
+# python example to show use of for loop in sequential traversal  
+  
+# given string  
+str_1 = "Tpoint Tech"  
+  
+# iterating over string using for loop  
+for i in str_1:  
+    print(i)  
+  
+print()  
+  
+# given list  
+list_1 = ["Welcome", "to", "Tpoint", "Tech"]  
+  
+# iterating over list using for loop  
+for i in list_1:  
+    print(i)  
+  
+print()  
+  
+# given tuple  
+tuple_1 = ("Python", "for", "Beginners")  
+  
+# iterating over tuple using for loop  
+for i in tuple_1:  
+    print(i)  
+  
+print()  
+  
+# given dictionary  
+dict_1 = {  
+    1: "Tpoint",  
+    2: "Tech"  
+}  
+  
+# iterating over dictionary using for loop  
+for i in dict_1:  
+    print(i, ":", dict_1[i])  
