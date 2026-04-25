@@ -1,0 +1,10 @@
+# asking age from the user  
+age = int(input("Enter your age: "))  
+  
+# if-else statement: checking whether the user is eligible to vote or not  
+if age >= 18:  
+  # if block  
+  print("You are eligible to vote.")  
+else:  
+  # else block  
+  print("You are not eligible to vote.")  
