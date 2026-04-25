@@ -1,0 +1,53 @@
+# Mini EVM Simulation
+
+d_votes = 0
+a_votes = 0
+nota_votes = 0
+
+while True:
+    print("\n--- New Voter ---")
+
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
+    citizenship = input("Are you an Indian citizen? (yes/no): ").lower()
+
+    if age >= 18 and citizenship == "yes":
+        print("\nYou are eligible to vote.")
+        print("1. DMK")
+        print("2. AIADMK")
+        print("3. NOTA")
+
+        choice = int(input("Enter your choice (1/2/3): "))
+
+        if choice == 1:
+            d_votes += 1
+            print(name, "voted successfully.")
+        elif choice == 2:
+            a_votes += 1
+            print(name, "voted successfully.")
+        elif choice == 3:
+            nota_votes += 1
+            print(name, "voted successfully.")
+        else:
+            print("Invalid choice. Vote not counted.")
+    else:
+        print("Not eligible to vote.")
+
+    again = input("\nIs there another voter? (yes/no): ").lower()
+    if again != "yes":
+        break
+
+print("\n--- Final Results ---")
+print("DMK Votes:", d_votes)
+print("AIADMK Votes:", a_votes)
+print("NOTA Votes:", nota_votes)
+
+# Winner declaration
+if d_votes > a_votes and d_votes > nota_votes:
+    print("DMK wins!")
+elif a_votes > d_votes and a_votes > nota_votes:
+    print("AIADMK wins!")
+elif nota_votes > d_votes and nota_votes > a_votes:
+    print("NOTA wins!")
+else:
+    print("It's a tie!")
